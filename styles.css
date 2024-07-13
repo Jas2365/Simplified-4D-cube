@@ -1,0 +1,94 @@
+body {
+  background-color: #333;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene {
+  height: 200px;
+  width: 200px;
+  perspective: 900px;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  transition: all 1s
+}
+
+[class|="cube"] {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid black;  
+}
+
+.front-side {
+ transform: translateZ(100px) rotateY(0deg);
+  background-color: red;
+}
+.back-side {
+  transform: translateZ(-100px) rotateY(180deg);
+  background-color: orange;
+}
+.right-side {
+  transform: translateX(100px)  rotateY(90deg);
+  background-color: blue;
+}
+.left-side {
+  transform: translateX(-100px) rotateY(-90deg);
+  background-color: green;
+}
+.up-side {
+  transform: translateY(-100px) rotateX(90deg);
+  background-color: yellow;
+}
+.down-side {
+  transform: translateY(100px) rotateX(-90deg);
+  background-color: white;
+}
+
+.controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 250px;
+  flex-wrap: wrap;
+}
+.controls button {
+  padding: 12px 26px;
+  margin: 5px;
+  border: 2px solid purple;
+  background-color: aqua;
+  border-radius: 50px;
+  outline: none;
+}
+.coordinates {
+  color: powderblue;
+  border: 2px dashed ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+}
+.coordinates h3, p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px dashed;
+}

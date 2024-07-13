@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squares</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="scene">
+    <div class="container" id="cube">
+      <div class="cube-up up-side">Up</div>
+      <div class="cube-down down-side">Down</div>
+      <div class="cube-front front-side">Front</div>
+      <div class="cube-back back-side">Back</div>
+      <div class="cube-right right-side">Right</div>
+      <div class="cube-left left-side">Left</div>
+    </div>
+  </div>
+  <div class="coordinates">
+    <h3>Coordinates Angles</h3>
+    <p>
+      X : <span id="xDeg">0</span>&deg;<br>
+      Y : <span id="yDeg">0</span>&deg;<br> 
+      Z : <span id="zDeg">0</span>&deg;
+    </p>
+    <h3>Coordinates Scale</h3>
+    <p>
+      X : <span id="xScale">1</span> order<br>
+      Y : <span id="yScale">1</span> order<br> 
+      Z : <span id="zScale">1</span> order
+    </p>
+  </div>
+  <div class="controls">
+    <button onclick="rotatingCube(rotateUp)">Up</button>
+    <button onclick="rotatingCube(rotateDown)">Down</button>
+     
+    <button onclick="rotatingCube(rotateRight)">Right</button>
+    <button onclick="rotatingCube(rotateLeft)">Left</button>
+
+    <button onclick="rotatingCube(rotateClockwise)">Clockwise</button>
+    <button onclick="rotatingCube(rotateAntiClockwise)">AntiClockwise</button>
+
+    <button onclick="rotatingCube(upScaleX)">ScaleUp X</button>
+    <button onclick="rotatingCube(downScaleX)">ScaleDown X</button>
+    
+    <button onclick="rotatingCube(upScaleY)">ScaleUp Y</button>
+    <button onclick="rotatingCube(downScaleY)">ScaleDown Y</button>
+    
+    <button onclick="rotatingCube(upScaleZ)">ScaleUp Z</button>
+    <button onclick="rotatingCube(downScaleZ)">ScaleDown Z</button>
+    
+  </div>
+</body>
+
+</html>
