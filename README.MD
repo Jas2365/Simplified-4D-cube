@@ -1,9 +1,12 @@
-# A Rotating and Scaling Cube
- 
- - this is an rotating and sclaing cube took me a day to make 
- - this was my first time using 3d transform property 
- - im too tiered to write anymore
+# Simplified-4D-Cube
+  
+  This is a interactive visualisation of 4-dimensional cube
+  
+  ## Rotations 
+   - I have added rotations in all three axis 
+   - there are three rings of 4d rotation. they are xRing, yRing and zRing 
 
+  ## [Simplified-4D-Cube](https://jas2365.github.io/Simplified-4D-cube/)
 
 
  ### Author
