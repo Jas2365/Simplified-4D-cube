@@ -350,6 +350,7 @@ function rotate4dInv() {
     outer.children[i].style.height = "100px";
     center.children[i].style.width = "340px";
     center.children[i].style.height = "340px";
+    
     if (i == 0) {
       outer.children[i].style.transform = "translateY(-50px) rotateX(90deg) ";
       center.children[i].style.transform = "translateY(-170px) rotateX(90deg) ";
@@ -372,7 +373,7 @@ function rotate4dInv() {
         "translateX(-170px) rotateY(-90deg) ";
     }
   }
-
+  
   outer.id = "cube-2";
   center.id = "cube";
 }
