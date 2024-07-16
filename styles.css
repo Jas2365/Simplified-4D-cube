@@ -1,12 +1,19 @@
 body {
   background-color: #333;
-  display: flex;
+  /* display: flex;
   height:60vh;
   width: 60vw;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
+.flex {
+  display: grid;
+  height: 40vh;
+  width: 40vw;
+  justify-items: center;
+  align-items: center;
+}
 .scene {
   height: 100px;
   width: 100px;
@@ -44,7 +51,7 @@ body {
 
 .container-2 {
   translate: 120px 120px 0px;
-} 
+}
 .container-3 {
   translate: 120px 10px 0px;
 }
@@ -62,7 +69,7 @@ body {
 }
 .container-8 {
   translate: 120px 120px -110px;
-}  
+}
 .outer {
   position: absolute;
   height: 340px;
@@ -180,7 +187,8 @@ body {
 
 .controls {
   position: absolute;
-  bottom: 0;
+  left: 5vw;
+  bottom: 5vh;
   display: grid;
   grid-template-columns: repeat(3, 75px);
   grid-template-rows: repeat(6, 30px);
