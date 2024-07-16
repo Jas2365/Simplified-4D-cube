@@ -12,17 +12,18 @@ body {
   height: 100px;
   width: 100px;
   perspective: 1000px;
+  position: absolute;
 }
-
-.container {
-  width: 100px;
-  height: 100px;
+.invisible-box {
+  width: 340px;
+  height: 340px;
   position: absolute;
   transform-style: preserve-3d;
   transform: rotate3d(0deg);
   transition: all 1s;
 }
 
+.container,
 .container-2,
 .container-3,
 .container-4,
@@ -37,10 +38,15 @@ body {
   transform: rotate3d(0deg);
   transition: all 1s;
 }
+.container {
+  width: 340px;
+  height: 340px;
+  translate: 0px 0px 0px;
+}
 
 .container-2 {
   translate: 120px 120px 0px;
-}
+} 
 .container-3 {
   translate: 120px 10px 0px;
 }
@@ -58,8 +64,8 @@ body {
 }
 .container-8 {
   translate: 120px 120px -110px;
-}
-[class|="outer"] {
+}  
+.outer {
   position: absolute;
   height: 340px;
   width: 340px;
@@ -68,10 +74,18 @@ body {
   align-items: center;
   box-sizing: border-box;
   border: 4px solid black;
-  opacity: 0.6;
+  opacity: 0.2;
+  transition: all 1s;
 }
 
-[class|="cube"] {
+.cube-2,
+.cube-3,
+.cube-4,
+.cube-5,
+.cube-6,
+.cube-7,
+.cube-8 {
+  color: white;
   position: absolute;
   height: 100px;
   width: 100px;
@@ -79,76 +93,109 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  opacity: 0.4;
+  transition: all 1s;
+}
+.outer {
+  color: black;
+  background-color: white;
   border: 2px solid black;
+}
+.cube-2 {
+  background-color: black;
+  border: 2px solid white;
+  opacity: 1;
+}
+.cube-3 {
+  background-color: red;
+  border: 2px solid orange;
+}
+.cube-6 {
+  background-color: orange;
+  border: 2px solid red;
+}
+.cube-4 {
+  background-color: blue;
+  border: 2px solid green;
+}
+.cube-5 {
+  background-color: green;
+  border: 2px solid blue;
+}
+.cube-7 {
+  background-color: yellow;
+  border: 2px solid white;
+}
+.cube-8 {
+  background-color: white;
+  border: 2px solid yellow;
 }
 
 .front-side {
   transform: translateZ(50px) rotateY(0deg);
-  background-color: red;
+  /* background-color: red; */
 }
 .back-side {
   transform: translateZ(-50px) rotateY(180deg);
-  background-color: orange;
+  /* background-color: orange; */
 }
 .right-side {
   transform: translateX(50px) rotateY(90deg);
-  background-color: blue;
+  /* background-color: blue; */
 }
 .left-side {
   transform: translateX(-50px) rotateY(-90deg);
-  background-color: green;
+  /* background-color: green; */
 }
 .up-side {
   transform: translateY(-50px) rotateX(90deg);
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .down-side {
   transform: translateY(50px) rotateX(-90deg);
-  background-color: white;
+  /* background-color: white; */
 }
 
 .front-outer {
   transform: translateZ(170px) rotateY(0deg);
-  background-color: red;
+  /* background-color: red; */
 }
 .back-outer {
   transform: translateZ(-170px) rotateY(180deg);
-  background-color: orange;
+  /* background-color: orange; */
 }
 .right-outer {
   transform: translateX(170px) rotateY(90deg);
-  background-color: blue;
+  /* background-color: blue; */
 }
 .left-outer {
   transform: translateX(-170px) rotateY(-90deg);
-  background-color: green;
+  /* background-color: green; */
 }
 .up-outer {
   transform: translateY(-170px) rotateX(90deg);
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .down-outer {
   transform: translateY(170px) rotateX(-90deg);
-  background-color: white;
+  /* background-color: white; */
 }
 
 .controls {
   position: absolute;
   left: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  max-height: 250px;
-  flex-wrap: wrap;
+  /* bottom: 0; */
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: repeat(6, 30px);
 }
 .controls button {
-  padding: 12px 26px;
-  margin: 5px;
+  width: 75px;
+  height: 30px;
   border: 2px solid purple;
   background-color: aqua;
   border-radius: 50px;
+  font-size: small;
   outline: none;
 }
 .coordinates {
