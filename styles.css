@@ -4,14 +4,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  /* height: 600px; */
 }
 
 .flex {
-  display: grid;
-  height: 100vh;
-  width:100vw;
-  justify-items: center;
+  display: flex;
+  height: 74vh;
+   width:100vw;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .scene {
   height: 340px;
