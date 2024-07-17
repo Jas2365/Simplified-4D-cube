@@ -4,12 +4,12 @@
   you are able to interact with the given visualisation of 4D-cube/ Quad (better name then teseract). 
 
 ### How the rotations work
- -I'll be using terms to lable each cubes:
-    -Center cube - A cube that's look surrounded by six cubes in the visualisation, it will also be used an Origin.
-    -Left and Right cubes - The cubes that are located at -ve X and +ve X respectively from the Center cube.
-    -Front and Back cubes - The cubes that are located at -ve Z and +ve Z respectively from the Center cube.
-    -Down and Up cubes - The cubes that are located at -ve Y and +ve Y respectively from the Center cube.
-    -Outer cube - A cube that is rotated in w-axis to appear bigger than it should, and containing all other cubes.
+ - I'll be using terms to lable each cubes:
+    - Center cube - A cube that's look surrounded by six cubes in the visualisation, it will also be used an Origin.
+    - Left and Right cubes - The cubes that are located at -ve X and +ve X respectively from the Center cube.
+    - Front and Back cubes - The cubes that are located at -ve Z and +ve Z respectively from the Center cube.
+    - Down and Up cubes - The cubes that are located at -ve Y and +ve Y respectively from the Center cube.
+    - Outer cube - A cube that is rotated in w-axis to appear bigger than it should, and containing all other cubes.
  
 ## 4D X-Ring
  - This ring consists of four cubes Up, Down, Front and Back cubes.
