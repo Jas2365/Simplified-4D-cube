@@ -41,8 +41,7 @@
    
 
    if you dont get it thats a joke you physically cannot scramble it
-  
-  ## [Simplified-4D-Cube](https://jas2365.github.io/Simplified-4D-cube/)
+
 
 
  ### Author
